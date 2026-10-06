@@ -1,0 +1,69 @@
+/* ===== Dark Cybersecurity Theme ===== */
+:root {
+  --bg: #0b0f17;
+  --panel: #111827;
+  --border: #1f2937;
+  --accent: #22d3ee;
+}
+
+body {
+  background: var(--bg);
+  color: #e5e7eb;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+.navbar { background: var(--panel); }
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.card-header {
+  background: transparent;
+  border-bottom: 1px solid var(--border);
+  font-weight: 600;
+  letter-spacing: .3px;
+}
+
+
+.stat-card { border-left: 3px solid var(--accent); }
+.stat-label {
+  font-size: .75rem;
+  text-transform: uppercase;
+  color: #9ca3af;
+  letter-spacing: 1px;
+}
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Consolas, "Courier New", monospace;
+}
+
+.chart-box { height: 260px; position: relative; }
+
+
+.table { --bs-table-bg: transparent; }
+.table th {
+  color: #9ca3af;
+  font-size: .75rem;
+  text-transform: uppercase;
+  border-bottom-color: var(--border);
+}
+.table td { border-bottom-color: var(--border); font-size: .88rem; }
+.mono { font-family: Consolas, "Courier New", monospace; }
+
+
+.alerts-list { max-height: 360px; overflow-y: auto; }
+.alerts-list .list-group-item {
+  background: transparent;
+  border-color: var(--border);
+  color: #e5e7eb;
+}
+.alert-high   { border-left: 3px solid #ef4444; }
+.alert-medium { border-left: 3px solid #f59e0b; }
+.alert-low    { border-left: 3px solid #3b82f6; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #374151; border-radius: 4px; }
